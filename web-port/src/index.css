@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #0D0D0D;
+  --card-bg: #1A1A1A;
+  --sidebar-color: #121212;
+  --accent-color: #F4A2B9;
+  --accent-light: #FFBCCF;
+  --accent-hover: #D17A91;
+  --text-color: #FFFFFF;
+  --text-secondary: #999999;
+  --success-color: #28A745;
+  --danger-color: #DC3545;
+  --border-color: #252525;
+  --corner-radius: 15px;
+  --border-width: 2px;
+  
+  --font-header: 'Impact', sans-serif;
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-header);
+  letter-spacing: 0.05em;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  background-color: transparent;
+  color: inherit;
+}
+
+.militar-card {
+  background-color: var(--card-bg);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--corner-radius);
+  padding: 1.5rem;
+}
+
+.militar-btn {
+  background-color: var(--accent-color);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.militar-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.militar-btn-secondary {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+}
+
+.militar-input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.75rem;
+  width: 100%;
+  color: #fff;
+}
+
+.militar-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
